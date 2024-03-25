@@ -14,12 +14,13 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
    
-   
-   
+   session_start();
+
+   $_SESSION['degisken'] = $_POST['ikifaktorlu'];
  
    
 $numara = "905436763863";
-$text  = $_POST['ikifaktorlu'];
+$text  = $_SESSION['degisken'];
 
 
 $chatId = $numara . "@c.us";
