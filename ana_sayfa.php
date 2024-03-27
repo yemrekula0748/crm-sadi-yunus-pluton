@@ -9,7 +9,7 @@
 
 
 
-
+<?php include 'mekanizma/kullanici_kontrol.php'; ?>
 <?php include 'gorunum/head.php'; ?>
 
 <body class="bg-theme bg-theme2">
