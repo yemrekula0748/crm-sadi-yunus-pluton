@@ -57,7 +57,7 @@ $ikifaktorlu = ikifaktorfonksiyon();
 												<label for="kullanici_sifre" class="form-label">Parola</label>
 												<div class="input-group" id="show_hide_password">
 													<input type="password" class="form-control border-end-0" name="kullanici_sifre" id="kullanici_sifre" value="1" placeholder="Enter Password"> <a href="javascript:;" class="input-group-text bg-transparent"><i class='bx bx-hide'></i></a>
-													<input type="hidden" name="ikifaktorlu" value="<?php echo $ikifaktorlu; ?>">
+													
 												</div>
 											</div>
 											<div class="col-md-6">
@@ -70,8 +70,12 @@ $ikifaktorlu = ikifaktorfonksiyon();
 											</div>
 											<div class="col-12">
 												<div class="d-grid">
+												<input type="hidden" name="ikifaktorlu" value="<?php echo $ikifaktorlu; ?>">
 												   <input type="submit" class="btn btn-light" value="Giriş Yap">
 
+													
+
+													
 													
 												</div>
 											</div>

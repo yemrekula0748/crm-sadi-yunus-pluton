@@ -10,16 +10,27 @@ $conn = veritabani_baglan();
 
 
 $sql = "SELECT * FROM kullanicilar WHERE kullanici_giris = '$username' AND kullanici_sifre = '$password'";
+
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
+	
+   $row = $result->fetch_assoc();
+   $kullanici_goster = $row["kullanici_ad"];
+   $kullanici_goster_unvan = $row["kullanici_unvan"];
    
    session_start();
 
    $_SESSION['degisken'] = $_POST['ikifaktorlu'];
+   
+
+   
+   $_SESSION['kullanici_adi'] = $kullanici_goster;
+   $_SESSION['kullanici_unvan'] = $kullanici_goster_unvan;
+   
  
    
-$numara = "905436763863";
+$numara =  $row["kullanici_telefon"];
 $text  = $_SESSION['degisken'];
 
 
