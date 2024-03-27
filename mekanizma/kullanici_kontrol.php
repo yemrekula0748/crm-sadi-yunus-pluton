@@ -13,6 +13,6 @@ if(isset($_SESSION['giris_yapildimi'])) {
         exit;
     }
 } else {
-    echo "Hata: Değişken tanımlı değil.";
+   header("Location: giris.php");
 }
 ?>
