@@ -1,4 +1,4 @@
-<?php
+<?php 
 include 'fonksiyon.php';
 
 // Rasgele 6 haneli sayıyı oluştur

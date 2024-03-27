@@ -26,3 +26,4 @@ if(isset($_POST['tfa'])) {
 	echo $_SESSION['degisken'];
 }
 ?>
+ 

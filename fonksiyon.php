@@ -1,4 +1,4 @@
-<?php
+<?php 
 function veritabani_baglan() {
     $servername = "localhost";
     $username = "crm";

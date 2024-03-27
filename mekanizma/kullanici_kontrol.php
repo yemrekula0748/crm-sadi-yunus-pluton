@@ -15,4 +15,4 @@ if(isset($_SESSION['giris_yapildimi'])) {
 } else {
    header("Location: giris.php");
 }
-?>
+?> 

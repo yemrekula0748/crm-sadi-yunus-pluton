@@ -1,4 +1,4 @@
-<?php
+<?php 
 session_start();
 $_SESSION['giris_yapildimi'] = "hayir";
 session_destroy();

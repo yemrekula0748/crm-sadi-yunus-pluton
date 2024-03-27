@@ -1,4 +1,4 @@
-<!doctype html>
+<!doctype html> 
 <html lang="tr">
 
 <?php include 'gorunum/head.php'; ?>
